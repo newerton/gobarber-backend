@@ -1,8 +1,11 @@
-# GoBarber - 7.0
+# GoBarber - 7.0 - Backend
 
 ![](https://hotmart.s3.amazonaws.com/product_contents/5bfd4a97-5e39-4c99-a871-8d3e969769cc/Course_Image01_580x320.jpg)
 
-![](https://img.shields.io/github/stars/newerton/gobarber.svg) ![](https://img.shields.io/github/forks/newerton/gobarber.svg) ![](https://img.shields.io/github/issues/newerton/gobarber.svg) ![](https://img.shields.io/github/license/newerton/gobarber.svg)
+![](https://img.shields.io/github/stars/newerton/gobarber-backend.svg) 
+![](https://img.shields.io/github/forks/newerton/gobarber-backend.svg) 
+![](https://img.shields.io/github/issues/newerton/gobarber-backend.svg) 
+![](https://img.shields.io/github/license/newerton/gobarber-backend.svg)
 
 ### Contents development
 
