@@ -24,10 +24,19 @@ class Database {
   }
 
   mongo() {
-    this.mongoConnection = mongoose.connect(process.env.MONGO_URL, {
-      useNewUrlParser: true,
-      useFindAndModify: true,
-    });
+    this.mongoConnection = mongoose
+      .connect(process.env.MONGO_URL, {
+        useNewUrlParser: true,
+        useFindAndModify: true,
+      })
+      .then(
+        () => {
+          console.log('MongoDB is ready!');
+        },
+        err => {
+          console.log(err);
+        }
+      );
   }
 }
 export default new Database();
