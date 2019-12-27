@@ -18,7 +18,7 @@ class AppointmentController {
       where: { user_id: req.userId, canceled_at: null },
       order: ['date'],
       attributes: ['id', 'date', 'canceled_at', 'past', 'cancelable'],
-      limit: 1,
+      limit: 10,
       offset: (page - 1) * 1,
       include: [
         {
