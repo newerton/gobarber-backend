@@ -11,6 +11,7 @@
     "posttest": "cross-env NODE_ENV=test sequelize db:migrate:undo:all"
   },
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@sentry/node": "^7.38.0",
     "bcryptjs": "^2.4.3",
     "bee-queue": "^1.2.2",
@@ -43,7 +44,6 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-prettier": "^4.2.1",
     "factory-girl": "^5.0.4",
-    "faker": "^6.6.6",
     "jest": "^29.4.3",
     "nodemon": "^2.0.20",
     "prettier": "^2.8.4",
