@@ -32,7 +32,7 @@
     "socket.io": "^4.6.1",
     "sqlite3": "^5.1.6",
     "youch": "^3.2.3",
-    "yup": "^1.0.0"
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@sucrase/jest-plugin": "^3.0.0",
