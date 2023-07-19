@@ -17,7 +17,7 @@
     "bee-queue": "^1.2.2",
     "cors": "^2.8.5",
     "date-fns": "^2.30.0",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "express-handlebars": "^7.0.7",
