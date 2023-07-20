@@ -48,7 +48,7 @@
     "nodemon": "^3.0.1",
     "prettier": "^2.8.8",
     "sequelize-cli": "^6.6.1",
-    "sucrase": "^3.32.0",
+    "sucrase": "^3.34.0",
     "supertest": "^6.3.3"
   }
 }
