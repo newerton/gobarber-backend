@@ -11,7 +11,7 @@
     "posttest": "cross-env NODE_ENV=test sequelize db:migrate:undo:all"
   },
   "dependencies": {
-    "@faker-js/faker": "^8.0.2",
+    "@faker-js/faker": "^8.2.0",
     "@sentry/node": "^7.69.0",
     "bcryptjs": "^2.4.3",
     "bee-queue": "^1.2.2",
