@@ -49,6 +49,6 @@
     "prettier": "^3.2.4",
     "sequelize-cli": "^6.6.2",
     "sucrase": "^3.35.0",
-    "supertest": "^6.3.3"
+    "supertest": "^6.3.4"
   }
 }
