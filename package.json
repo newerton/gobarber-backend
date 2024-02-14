@@ -25,7 +25,7 @@
     "mongoose": "^8.1.2",
     "multer": "^1.4.1",
     "nodemailer": "^6.9.9",
-    "nodemailer-express-handlebars": "^6.1.0",
+    "nodemailer-express-handlebars": "^6.1.2",
     "pg": "^8.11.3",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.37.0",
