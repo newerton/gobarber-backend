@@ -28,7 +28,7 @@
     "nodemailer-express-handlebars": "^7.0.0",
     "pg": "^8.13.0",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^6.37.3",
+    "sequelize": "^6.37.4",
     "socket.io": "^4.8.0",
     "sqlite3": "^5.1.7",
     "youch": "^3.3.3",
