@@ -24,7 +24,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.1",
     "multer": "^1.4.1",
-    "nodemailer": "^6.9.15",
+    "nodemailer": "^6.9.16",
     "nodemailer-express-handlebars": "^7.0.0",
     "pg": "^8.13.0",
     "pg-hstore": "^2.3.3",
