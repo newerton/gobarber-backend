@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@sucrase/jest-plugin": "^3.0.0",
-    "@types/jest": "^29.5.14",
+    "@types/jest": "^30.0.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.29.0",
     "eslint-config-airbnb-base": "^15.0.0",
