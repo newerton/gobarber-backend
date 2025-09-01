@@ -44,7 +44,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.1",
     "factory-girl": "^5.0.4",
-    "jest": "^30.0.3",
+    "jest": "^30.1.2",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
     "sequelize-cli": "^6.6.3",
