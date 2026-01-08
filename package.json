@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "^10.1.0",
-    "@sentry/node": "^10.29.0",
+    "@sentry/node": "^10.32.1",
     "bcryptjs": "^3.0.3",
     "bee-queue": "^2.0.0",
     "cors": "^2.8.5",
