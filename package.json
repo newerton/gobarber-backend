@@ -45,7 +45,7 @@
     "eslint-plugin-prettier": "^5.5.5",
     "factory-girl": "^5.0.4",
     "jest": "^30.2.0",
-    "nodemon": "^3.1.11",
+    "nodemon": "^3.1.14",
     "prettier": "^3.8.1",
     "sequelize-cli": "^6.6.5",
     "sucrase": "^3.35.1",
