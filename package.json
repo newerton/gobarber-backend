@@ -22,7 +22,7 @@
     "express-async-errors": "^3.1.1",
     "express-handlebars": "^8.0.6",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.3.1",
+    "mongoose": "^9.3.3",
     "multer": "^2.1.1",
     "nodemailer": "^8.0.3",
     "nodemailer-express-handlebars": "^7.0.0",
