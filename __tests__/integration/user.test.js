@@ -1,5 +1,5 @@
-import request from 'supertest';
 import bcrypt from 'bcryptjs';
+import request from 'supertest';
 import app from '../../src/app';
 
 import User from '../../src/app/models/User';
@@ -14,21 +14,19 @@ describe('User', () => {
   const email = `newerton.araujo@gmail.com`;
   const password = 'abc123';
 
-  it('should be able to register', async done => {
-    const response = await request(app)
-      .post('/users')
-      .send({
-        name,
-        email,
-        password,
-        provider: false,
-      });
+  it('should be able to register', async (done) => {
+    const response = await request(app).post('/users').send({
+      name,
+      email,
+      password,
+      provider: false,
+    });
 
     expect(response.body).toHaveProperty('id');
     done();
   });
 
-  it('should encrypt user password when user created', async done => {
+  it('should encrypt user password when user created', async (done) => {
     const user = await User.findOne({
       where: { email },
     });
@@ -38,27 +36,23 @@ describe('User', () => {
     done();
   });
 
-  it('should not be able to register with duplicated email', async done => {
-    const response = await request(app)
-      .post('/users')
-      .send({
-        name,
-        email,
-        password,
-        provider: false,
-      });
+  it('should not be able to register with duplicated email', async (done) => {
+    const response = await request(app).post('/users').send({
+      name,
+      email,
+      password,
+      provider: false,
+    });
 
     expect(response.status).toBe(400);
     done();
   });
 
-  it('should not be able to register if validation fail', async done => {
-    const response = await request(app)
-      .post('/users')
-      .send({
-        name,
-        email,
-      });
+  it('should not be able to register if validation fail', async (done) => {
+    const response = await request(app).post('/users').send({
+      name,
+      email,
+    });
 
     expect(response.status).toBe(400);
     expect(response.body).toEqual({ error: 'Validation fails' });

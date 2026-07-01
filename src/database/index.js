@@ -1,9 +1,8 @@
-import Sequelize from 'sequelize';
 import mongoose from 'mongoose';
-
-import User from '../app/models/User';
-import File from '../app/models/File';
+import Sequelize from 'sequelize';
 import Appointment from '../app/models/Appointment';
+import File from '../app/models/File';
+import User from '../app/models/User';
 
 import databaseConfig from '../config/database';
 
@@ -19,8 +18,8 @@ class Database {
     this.connection = new Sequelize(databaseConfig);
 
     models
-      .map(model => model.init(this.connection))
-      .map(model => model.associate && model.associate(this.connection.models));
+      .map((model) => model.init(this.connection))
+      .map((model) => model.associate?.(this.connection.models));
   }
 
   mongo() {
@@ -34,9 +33,9 @@ class Database {
           () => {
             console.log('MongoDB is ready!');
           },
-          err => {
+          (err) => {
             console.log(err);
-          }
+          },
         );
     }
   }

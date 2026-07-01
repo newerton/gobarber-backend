@@ -1,14 +1,12 @@
-import * as Yup from 'yup';
-import { startOfHour, parseISO, isBefore, format, subHours } from 'date-fns';
+import { format, isBefore, parseISO, startOfHour, subHours } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
-import User from '../models/User';
-import File from '../models/File';
-import Appointment from '../models/Appointment';
-
-import Notification from '../schemas/Notification';
-
-import CancellationMail from '../jobs/CancellationMail';
+import * as Yup from 'yup';
 import Queue from '../../lib/Queue';
+import CancellationMail from '../jobs/CancellationMail';
+import Appointment from '../models/Appointment';
+import File from '../models/File';
+import User from '../models/User';
+import Notification from '../schemas/Notification';
 
 class AppointmentController {
   async index(req, res) {

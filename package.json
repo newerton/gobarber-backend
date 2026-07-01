@@ -8,7 +8,8 @@
     "queue": "nodemon src/queue.js",
     "pretest": "cross-env NODE_ENV=test sequelize db:migrate",
     "test": "cross-env NODE_ENV=test jest --detectOpenHandles --forceExit",
-    "posttest": "cross-env NODE_ENV=test sequelize db:migrate:undo:all"
+    "posttest": "cross-env NODE_ENV=test sequelize db:migrate:undo:all",
+    "lint": "biome check --write --unsafe"
   },
   "dependencies": {
     "@faker-js/faker": "^10.5.0",
@@ -16,18 +17,18 @@
     "bcryptjs": "^3.0.3",
     "bee-queue": "^2.0.0",
     "cors": "^2.8.6",
-    "date-fns": "^4.2.1",
+    "date-fns": "^4.4.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-async-errors": "^3.1.1",
     "express-handlebars": "^9.0.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.7.3",
-    "multer": "^2.1.1",
+    "multer": "^2.2.0",
     "nodemailer": "^9.0.3",
     "nodemailer-express-handlebars": "^7.0.0",
     "pg": "^8.22.0",
-    "pg-hstore": "^2.3.3",
+    "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.8",
     "socket.io": "^4.8.3",
     "sqlite3": "^6.0.1",
@@ -35,14 +36,10 @@
     "yup": "^1.7.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.5.2",
     "@sucrase/jest-plugin": "^3.0.0",
     "@types/jest": "^30.0.0",
     "cross-env": "^10.1.0",
-    "eslint": "^10.6.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-prettier": "^5.5.5",
     "factory-girl": "^5.0.4",
     "jest": "^30.4.2",
     "nodemon": "^3.1.14",
@@ -50,5 +47,16 @@
     "sequelize-cli": "^6.6.5",
     "sucrase": "^3.35.1",
     "supertest": "^7.2.2"
+  },
+  "overrides": {
+    "editorconfig": "^3.0.2",
+    "form-data": "^4.0.6",
+    "minimatch": "^10.2.5",
+    "ws": "^8.21.0",
+    "js-yaml": "^5.2.0",
+    "qs": "^6.15.3",
+    "tar": "^7.5.19",
+    "uuid": "^14.0.1",
+    "@babel/core": "^8.0.1"
   }
 }

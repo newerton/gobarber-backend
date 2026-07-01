@@ -31,7 +31,7 @@ class NotificationController {
       {
         read: true,
       },
-      { new: true }
+      { new: true },
     );
     return res.json(notification);
   }

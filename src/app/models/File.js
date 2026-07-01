@@ -2,7 +2,7 @@ import Sequelize, { Model } from 'sequelize';
 
 class File extends Model {
   static init(sequelize) {
-    super.init(
+    Model.init(
       {
         name: Sequelize.STRING,
         path: Sequelize.STRING,
@@ -15,10 +15,10 @@ class File extends Model {
       },
       {
         sequelize,
-      }
+      },
     );
 
-    return this;
+    return File;
   }
 }
 

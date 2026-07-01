@@ -1,16 +1,15 @@
 import './bootstrap';
 
-import express from 'express';
-import path from 'path';
-import cors from 'cors';
+import path from 'node:path';
 import * as Sentry from '@sentry/node';
+import cors from 'cors';
+import express from 'express';
 import Youch from 'youch';
 import 'express-async-errors';
+import http from 'node:http';
 import io from 'socket.io';
-import http from 'http';
-
-import routes from './routes';
 import sentryConfig from './config/sentry';
+import routes from './routes';
 
 import './database';
 
@@ -32,7 +31,7 @@ class App {
 
   socket() {
     this.io = io(this.server);
-    this.io.on('connection', socket => {
+    this.io.on('connection', (socket) => {
       const { user_id } = socket.handshake.query;
       this.connectedUsers[user_id] = socket.id;
 
@@ -48,7 +47,7 @@ class App {
     this.app.use(express.json());
     this.app.use(
       '/files',
-      express.static(path.resolve(__dirname, '..', 'tmp', 'uploads'))
+      express.static(path.resolve(__dirname, '..', 'tmp', 'uploads')),
     );
     this.app.use((req, res, next) => {
       req.io = this.io;

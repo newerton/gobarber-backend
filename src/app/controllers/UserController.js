@@ -1,18 +1,13 @@
 import * as Yup from 'yup';
-
-import User from '../models/User';
 import File from '../models/File';
+import User from '../models/User';
 
 class UserController {
   async store(req, res) {
     const schema = Yup.object().shape({
       name: Yup.string().required(),
-      email: Yup.string()
-        .email()
-        .required(),
-      password: Yup.string()
-        .required()
-        .min(5),
+      email: Yup.string().email().required(),
+      password: Yup.string().required().min(5),
     });
 
     if (!(await schema.isValid(req.body))) {
@@ -43,10 +38,10 @@ class UserController {
       password: Yup.string()
         .min(5)
         .when('oldPassword', (oldPassword, field) =>
-          oldPassword ? field.required() : field
+          oldPassword ? field.required() : field,
         ),
       confirmPassword: Yup.string().when('password', (password, field) =>
-        password ? field.required().oneOf([Yup.ref('password')]) : field
+        password ? field.required().oneOf([Yup.ref('password')]) : field,
       ),
     });
 
@@ -58,7 +53,7 @@ class UserController {
 
     const user = await User.findByPk(req.userId);
 
-    if (email != user.email) {
+    if (email !== user.email) {
       const userExists = await User.findOne({
         where: { email: req.body.email },
       });
