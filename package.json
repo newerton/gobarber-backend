@@ -36,7 +36,7 @@
     "yup": "^1.7.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.4",
+    "@biomejs/biome": "^2.5.5",
     "@sucrase/jest-plugin": "^3.0.0",
     "@types/jest": "^30.0.0",
     "cross-env": "^10.1.0",
