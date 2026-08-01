@@ -23,7 +23,7 @@
     "express-async-errors": "^3.1.1",
     "express-handlebars": "^9.0.1",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.8.1",
+    "mongoose": "^9.9.1",
     "multer": "^2.2.0",
     "nodemailer": "^9.0.3",
     "nodemailer-express-handlebars": "^7.0.0",
@@ -53,10 +53,13 @@
     "form-data": "^4.0.6",
     "minimatch": "^10.2.5",
     "ws": "^8.21.0",
-    "js-yaml": "^5.2.0",
+    "js-yaml": "^5.2.3",
     "qs": "^6.15.3",
     "tar": "^7.5.22",
     "uuid": "^14.0.1",
-    "@babel/core": "^8.0.1"
+    "@babel/core": "^8.0.1",
+    "engine": {
+      "io": "^6.6.9"
+    }
   }
 }

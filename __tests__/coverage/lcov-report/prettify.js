@@ -836,7 +836,7 @@ window.PR_SHOULD_USE_CONTINUATION = true;
     ac = null;
     var W = Date;
     if (!W.now) {
-      W = { now: () => +new Date() };
+      W = { now: () => Date.now() };
     }
     var X = 0;
     var S;
