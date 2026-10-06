@@ -46,7 +46,7 @@
     "prettier": "^3.9.9",
     "sequelize-cli": "^6.6.5",
     "sucrase": "^3.35.1",
-    "supertest": "^7.3.0"
+    "supertest": "^7.3.1"
   },
   "overrides": {
     "editorconfig": "^3.0.2",
